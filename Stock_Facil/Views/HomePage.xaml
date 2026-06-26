@@ -10,7 +10,7 @@
             Spacing="20">
 
             <Label
-                Text="Bienvenido"
+                Text="Bienvenido a Stock Fácil"
                 FontSize="28"
                 FontAttributes="Bold"/>
 
@@ -21,10 +21,10 @@
                 <VerticalStackLayout>
 
                     <Label
-                        Text="Stock Fácil"/>
+                        Text="Sistema Básico de Inventario"/>
 
                     <Label
-                        Text="Sistema básico de inventario."/>
+                        Text="Elija una opción para comenzar."/>
 
                 </VerticalStackLayout>
 
@@ -38,6 +38,14 @@
 
             <Button
                 Text="Proveedores"/>
+
+            <Button
+                Text="Ver Productos"
+                Clicked="VerProductos_Clicked"/>
+
+            <Button
+                Text="Registrar Producto"
+                Clicked="RegistrarProducto_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>

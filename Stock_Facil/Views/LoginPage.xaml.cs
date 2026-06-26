@@ -13,16 +13,16 @@ public partial class LoginPage : ContentPage
         this.authService = authService;
     }
 
-    private async void Login_Clicked(object sender, EventArgs e)
+    private async void Ingresar_Clicked(object sender, EventArgs e)
     {
-        bool valido = authService.Login(
+        bool acceso = authService.Login(
             txtUsuario.Text ?? "",
             txtPassword.Text ?? "");
 
-        if (!valido)
+        if (!acceso)
         {
             await DisplayAlert(
-                "Error",
+                "Acceso Denegado",
                 "Usuario o Contraseña Incorrectas.",
                 "Aceptar");
 

@@ -8,13 +8,13 @@
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30"
+            Padding="35"
             Spacing="20"
             VerticalOptions="Center">
 
             <Label
                 Text="📦"
-                FontSize="70"
+                FontSize="80"
                 HorizontalOptions="Center"/>
 
             <Label
@@ -41,7 +41,7 @@
                 Text="Ingresar"
                 BackgroundColor="#1976D2"
                 TextColor="White"
-                Clicked="Login_Clicked"/>
+                Clicked="Ingresar_Clicked"/>
 
         </VerticalStackLayout>
     </ScrollView>

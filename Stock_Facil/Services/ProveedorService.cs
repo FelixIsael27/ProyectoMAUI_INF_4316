@@ -9,6 +9,8 @@ namespace Stock_Facil.Services
 {
     public class ProveedorService
     {
+        private readonly List<Proveedor> proveedores = new();
+
         public List<Proveedor> ObtenerTodos()
         {
             return proveedores;

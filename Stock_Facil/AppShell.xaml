@@ -10,8 +10,33 @@
         Title="Inicio">
 
         <ShellContent
-        ContentTemplate="{DataTemplate views:LoginPage}" />
+            Title="Inicio"
+            Route="home"
+            ContentTemplate="{DataTemplate view:HomePage}" />
 
     </FlyoutItem>
+
+    <FlyoutItem
+        Title="Productos">
+
+        <ShellContent
+            Title="Listado"
+            Route="productos"
+            ContentTemplate="{DataTemplate producto:ProductoListPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem
+        Title="Registrar Producto">
+
+        <ShellContent
+            Title="Nuevo"
+            Route="nuevoProducto"
+            ContentTemplate="{DataTemplate producto:ProductoFormPage}" />
+
+    </FlyoutItem>
+
+    <MenuItem
+        Text="Cerrar sesión"
+        Clicked="CerrarSesion_Clicked"/>
 
 </Shell>

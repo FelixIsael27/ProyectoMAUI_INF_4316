@@ -1,5 +1,5 @@
-﻿using StockFacil.Views;
-using StockFacil.Views.Productos;
+﻿using Stock_Facil.Views;
+using Stock_Facil.Views.Productos;
 
 namespace Stock_Facil
 {
@@ -13,7 +13,6 @@ namespace Stock_Facil
             Routing.RegisterRoute(nameof(ProductoListPage), typeof(ProductoListPage));
             Routing.RegisterRoute(nameof(ProductoFormPage), typeof(ProductoFormPage));
         }
-    }
 
     private void CerrarSesion_Clicked(object sender, EventArgs e)
         {
@@ -22,3 +21,4 @@ namespace Stock_Facil
                     new LoginPage(new Services.AuthService()));
         }
     }
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Stock_Facil.Views.Productos.ProductoFormPage"
+             Title="Nuevo Producto">
+    
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+            <Label
+                Text="Registrar Producto"
+                FontSize="24"
+                FontAttributes="Bold"/>
+
+            <Entry
+                x:Name="txtNombre"
+                Placeholder="Nombre"/>
+
+            <Entry
+                x:Name="txtCodigo"
+                Placeholder="Código"/>
+
+            <Entry
+                x:Name="txtCategoria"
+                Placeholder="Categoría"/>
+
+            <Entry
+                x:Name="txtPrecio"
+                Keyboard="Numeric"
+                Placeholder="Precio"/>
+
+            <Entry
+                x:Name="txtCantidad"
+                Keyboard="Numeric"
+                Placeholder="Cantidad"/>
+
+            <Editor
+                x:Name="txtDescripcion"
+                Placeholder="Descripción"/>
+
+            <Button
+                Text="Guardar"
+                Clicked="Guardar_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

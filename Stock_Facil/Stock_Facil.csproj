@@ -71,6 +71,12 @@
 	  <None Update="Views\LoginPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </None>
+	  <None Update="Views\Productos\ProductoFormPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="Views\Productos\ProductoListPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
 	</ItemGroup>
 
 </Project>

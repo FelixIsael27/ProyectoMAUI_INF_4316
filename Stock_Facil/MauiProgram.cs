@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Logging;
 using Stock_Facil.Services;
 using Stock_Facil.Views;
+using Stock_Facil.Views.Productos;
 
 namespace Stock_Facil
 {
@@ -28,6 +29,10 @@ namespace Stock_Facil
             builder.Services.AddTransient<LoginPage>();
 
             builder.Services.AddTransient<HomePage>();
+
+            builder.Services.AddTransient<ProductoFormPage>();
+
+            builder.Services.AddTransient<ProductoListPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

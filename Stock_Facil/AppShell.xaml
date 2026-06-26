@@ -6,9 +6,12 @@
     xmlns:local="clr-namespace:Stock_Facil"
     Title="Stock_Facil">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <FlyoutItem
+        Title="Inicio">
+
+        <ShellContent
+        ContentTemplate="{DataTemplate views:LoginPage}" />
+
+    </FlyoutItem>
 
 </Shell>
